@@ -1,0 +1,74 @@
+/* General styling */
+body {
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+div.main {
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h1.section {
+    text-align: left;
+}
+
+.list {
+    list-style-type: none;
+    font-size: 18px;
+    text-align: center;
+    margin-left: -40px;
+}
+
+/* Navigation style */
+.header-nav {
+    background-color: rgb(48, 45, 45);
+    margin: -1rem calc(0px - (50vw - 50%)) 2rem;
+    margin-top: -0.5rem;
+    margin-right: calc(50% + 0px - 50vw);
+    margin-bottom: 2rem;
+    margin-left: calc(50% + 0px - 50vw);
+    padding-bottom: 5px;
+}
+
+/* Font scaling & colors */
+p {
+    font-size: 18px;
+}
+
+h1.nephcom {
+    font-size: 3rem;
+    color: plum;
+    text-align: left;
+}
+
+/* Links */
+a:link {
+    color: crimson;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: plum;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: crimson;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+/* Footer */
+.copyright-footer {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    left: 0px;
+    text-align: center;
+}
