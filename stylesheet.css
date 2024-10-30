@@ -1,4 +1,4 @@
-/* General styling P.S I apologize for this horrific CSS. */
+/* General styling */
 body {
     font-family: "UniFont";
     src: url("./resources/unifont-16.0.01");
@@ -7,7 +7,7 @@ body {
 }
 
 div.main {
-    width: 38.5rem;
+    width: fit-content;
     text-align: center;
     margin: 0 auto;
     margin-top: 100px;
@@ -17,7 +17,6 @@ div.main {
     border-radius: 8px;
     padding: 5px;
     position: relative;
-    height: 41.5rem;
 }
 
 h1.section {
@@ -36,35 +35,33 @@ div.buttons a {
     text-decoration: none;
 }
 
-div.verify {
-    transform: translateY(-25px)
-}
-
 /* Navigation style */
 nav.nav-items {
     text-align: right;
+    margin-bottom: 0px auto;
 }
 
 /* Font scaling & colors */
 p {
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 h1.nephcom {
     font-size: 3rem;
     color: plum;
     text-align: left;
-    border-bottom: 0.2rem solid rgb(88, 83, 83);
-    width: 15.5rem;
-    margin-top: 0rem;
+    border-bottom: 2px solid rgb(88, 83, 83);
+    width: 250px;
+    margin-top: 0px;
 }
 
 img.logo {
     width: 80px;
     height: 80px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding: 0px;
+}
+
+img.logo:hover {
+    filter: drop-shadow(0 0 0.2rem plum);
 }
 
 h1.projects {
@@ -86,6 +83,7 @@ a:hover {
     color: plum;
     background-color: transparent;
     text-decoration: underline;
+    text-shadow: 0 0 5px plum;
 }
 
 a:visited {
@@ -101,7 +99,7 @@ a:visited {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    margin-top: 8.7rem;
+    margin-top: 8.3rem;
 }
 
 .social-logo {
@@ -113,9 +111,8 @@ a:visited {
 .imgbutton:hover {
     box-shadow: 0 0px 16px 0 plum;
 }
-
 /* 404 Style */
-div.fourcontainer {
+div.container {
     text-align: center;
     font-size: 35px;
 }
