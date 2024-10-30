@@ -36,11 +36,8 @@ div.buttons a {
 }
 
 /* Navigation style */
-
-
 nav.nav-items {
     text-align: right;
-    margin-bottom: 0px auto;
 }
 
 /* Font scaling & colors */
@@ -93,12 +90,10 @@ a:visited {
 .footer {
     background-color: rgb(20, 20, 20);
     color: white;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    left: 0px;
-    text-align: center;
-    margin-top: 157px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 130px;
 }
 
 .social-logo {
@@ -109,4 +104,10 @@ a:visited {
 
 .imgbutton:hover {
     box-shadow: 0 0px 16px 0 plum;
+}
+
+/* 404 Style */
+div.container {
+    text-align: center;
+    font-size: 35px;
 }
