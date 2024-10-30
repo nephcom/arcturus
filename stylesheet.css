@@ -7,15 +7,15 @@ body {
 }
 
 div.container {
-    width: fit-content;
+    width: 38.5rem;
     text-align: center;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 6.25rem;
     word-wrap: break-word;
     white-space: normal;
     background-color: rgb(36, 36, 36);
-    border-radius: 8px;
-    padding: 5px;
+    border-radius: 0.5rem;
+    padding: 0.313rem;
     position: relative;
 }
 
@@ -38,26 +38,27 @@ div.buttons a {
 /* Navigation style */
 nav.nav-items {
     text-align: right;
-    margin-bottom: 0px auto;
+    margin-bottom: 0rem auto;
 }
 
 /* Font scaling & colors */
 p {
-    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.2rem;
 }
 
 h1.nephcom {
     font-size: 3rem;
     color: plum;
     text-align: left;
-    border-bottom: 2px solid rgb(88, 83, 83);
-    width: 250px;
-    margin-top: 0px;
+    border-bottom: 0.125rem solid rgb(88, 83, 83);
+    width: 15.625rem;
+    margin-top: 0rem;
 }
 
 img.logo {
-    width: 80px;
-    height: 80px;
+    width: 5rem;
+    height: 5rem;
 }
 
 img.logo:hover {
@@ -68,8 +69,8 @@ h1.projects {
     font-size: 3rem;
     color: plum;
     text-align: left;
-    border-bottom: 2px solid rgb(88, 83, 83);
-    width: 250px;
+    border-bottom: 0.125rem solid rgb(88, 83, 83);
+    width: 15.625rem;
 }
 
 /* Links */
@@ -83,7 +84,7 @@ a:hover {
     color: plum;
     background-color: transparent;
     text-decoration: underline;
-    text-shadow: 0 0 5px plum;
+    text-shadow: 0 0 0.313rem plum;
 }
 
 a:visited {
@@ -99,13 +100,13 @@ a:visited {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    margin-top: 8.3rem;
+    margin-top: 7.8rem;
 }
 
 .social-logo {
-    margin-bottom: -4px;
-    width: 20px;
-    height: 20px;
+    margin-bottom: -0.25rem;
+    width: 1.25rem;
+    height: 1.25rem;
 }
 
 .social-logo:hover {
@@ -113,10 +114,17 @@ a:visited {
 }
 
 .imgbutton:hover {
-    box-shadow: 0 0px 16px 0 plum;
+    box-shadow: 0 0rem 1rem 0 plum;
 }
 /* 404 Style */
 div.fourcontainer {
     text-align: center;
-    font-size: 35px;
+    font-size: 2.188rem;
+}
+
+.small-warning {
+    margin-top: 0rem;
+    font-size: 0.80rem;
+    margin-bottom: -0.70rem;
+    padding: 0rem;
 }
