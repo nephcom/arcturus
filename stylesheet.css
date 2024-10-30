@@ -17,7 +17,7 @@ div.main {
     border-radius: 8px;
     padding: 5px;
     position: relative;
-    height: 42rem;
+    height: 41rem;
 }
 
 h1.section {
@@ -57,16 +57,6 @@ h1.nephcom {
     border-bottom: 0.2rem solid rgb(88, 83, 83);
     width: 15.5rem;
     margin-top: 0rem;
-}
-
-h1.notice {
-    border-bottom: 2px solid rgb(88, 83, 83);
-    width: 20.5rem;
-    margin-top: 0rem;
-    text-align: left;
-    font-size: 3rem;
-    color: plum;
-    text-decoration: none;
 }
 
 img.logo {
@@ -111,7 +101,7 @@ a:visited {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    margin-top: 7.5rem;
+    margin-top: 8.7rem;
 }
 
 .social-logo {
@@ -128,42 +118,4 @@ a:visited {
 div.fourcontainer {
     text-align: center;
     font-size: 35px;
-}
-
-/* verify/index.html */
-.container {
-    text-align: center;
-}
-
-div.online-identities {
-    width: 40.5rem;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 100px;
-    word-wrap: break-word;
-    white-space: normal;
-    background-color: rgb(36, 36, 36);
-    border-radius: 8px;
-    padding: 5px;
-    position: relative;
-    height: 42rem;
-}
-
-.accounts {
-    text-align: center;
-    list-style: disc;
-    display: flexbox;
-    text-align:left;
-    margin-left: 2rem;
-    font-size: 1.5rem;
-}
-
-div.warn-banner {
-    background-color: orangered;
-    display: flexbox;
-    width: 100vw;
-    height: fit-content;
-    text-align: center;
-    padding: -1rem;
-    margin: -1rem;
 }
