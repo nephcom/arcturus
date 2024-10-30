@@ -1,5 +1,7 @@
 /* General styling */
 body {
+    font-family: "UniFont";
+    src: url("./resources/unifont-16.0.01");
     background-color: rgb(20, 20, 20);
     color: white;
 }
@@ -8,44 +10,68 @@ div.main {
     width: fit-content;
     text-align: center;
     margin: 0 auto;
+    margin-top: 100px;
+    word-wrap: break-word;
+    white-space: normal;
+    background-color: rgb(36, 36, 36);
+    border-radius: 8px;
+    padding: 5px;
 }
 
 h1.section {
     text-align: left;
 }
 
-.list {
-    list-style-type: none;
-    font-size: 18px;
-    text-align: center;
-    margin-left: -40px;
+hr.solid {
+    color: rgb(88, 83, 83);
+}
+
+div.buttons {
+    overflow-wrap: break-word;
+}
+
+div.buttons a {
+    text-decoration: none;
 }
 
 /* Navigation style */
-.header-nav {
-    background-color: rgb(48, 45, 45);
-    margin: -1rem calc(0px - (50vw - 50%)) 2rem;
-    margin-top: -0.5rem;
-    margin-right: calc(50% + 0px - 50vw);
-    margin-bottom: 2rem;
-    margin-left: calc(50% + 0px - 50vw);
-    padding-bottom: 5px;
+
+
+nav.nav-items {
+    text-align: right;
+    margin-bottom: 0px auto;
 }
 
 /* Font scaling & colors */
 p {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 h1.nephcom {
     font-size: 3rem;
     color: plum;
     text-align: left;
+    border-bottom: 2px solid rgb(88, 83, 83);
+    width: 250px;
+    margin-top: 0px;
+}
+
+img.logo {
+    width: 80px;
+    height: 80px;
+}
+
+h1.projects {
+    font-size: 3rem;
+    color: plum;
+    text-align: left;
+    border-bottom: 2px solid rgb(88, 83, 83);
+    width: 250px;
 }
 
 /* Links */
 a:link {
-    color: crimson;
+    color: plum;
     background-color: transparent;
     text-decoration: underline;
 }
@@ -57,13 +83,13 @@ a:hover {
 }
 
 a:visited {
-    color: crimson;
+    color: plum;
     background-color: transparent;
     text-decoration: underline;
 }
 
 /* Footer */
-.copyright-footer {
+.footer {
     background-color: rgb(20, 20, 20);
     color: white;
     position: fixed;
@@ -71,4 +97,10 @@ a:visited {
     width: 100%;
     left: 0px;
     text-align: center;
+}
+
+.social-logo {
+    margin-bottom: -4px;
+    width: 20px;
+    height: 20px;
 }
