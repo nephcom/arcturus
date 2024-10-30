@@ -92,11 +92,12 @@ a:visited {
 .footer {
     background-color: rgb(20, 20, 20);
     color: white;
-    position: fixed;
+    position: bottom;
     bottom: 0px;
     width: 100%;
     left: 0px;
     text-align: center;
+    margin-top: 157px;
 }
 
 .social-logo {
