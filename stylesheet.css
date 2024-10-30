@@ -100,13 +100,15 @@ a:visited {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    margin-top: 7.8rem;
+    margin-top: 5.7rem;
+    padding: 0rem;
 }
 
 .social-logo {
     margin-bottom: -0.25rem;
     width: 1.25rem;
     height: 1.25rem;
+    padding: 0rem;
 }
 
 .social-logo:hover {
