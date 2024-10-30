@@ -16,6 +16,7 @@ div.main {
     background-color: rgb(36, 36, 36);
     border-radius: 8px;
     padding: 5px;
+    position: relative;
 }
 
 h1.section {
@@ -92,7 +93,7 @@ a:visited {
 .footer {
     background-color: rgb(20, 20, 20);
     color: white;
-    position: bottom;
+    position: absolute;
     bottom: 0px;
     width: 100%;
     left: 0px;
@@ -104,4 +105,8 @@ a:visited {
     margin-bottom: -4px;
     width: 20px;
     height: 20px;
+}
+
+.imgbutton:hover {
+    box-shadow: 0 0px 16px 0 plum;
 }
