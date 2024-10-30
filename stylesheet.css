@@ -7,7 +7,7 @@ body {
 }
 
 div.main {
-    width: 40.5rem;
+    width: 38.5rem;
     text-align: center;
     margin: 0 auto;
     margin-top: 100px;
@@ -17,7 +17,7 @@ div.main {
     border-radius: 8px;
     padding: 5px;
     position: relative;
-    height: 41rem;
+    height: 41.5rem;
 }
 
 h1.section {
@@ -79,7 +79,7 @@ h1.projects {
 a:link {
     color: plum;
     background-color: transparent;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:hover {
