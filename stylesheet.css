@@ -5,11 +5,16 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    font-family: "Unifont", monospace;
     text-decoration: none;
 }
 
+@font-face {
+    font-family: 'unifont';
+    src: url(./fonts/unifont.woff);
+}
+
 body {
+    font-family: 'unifont';
     position: absolute;
     left: 0;
     right: 0;
