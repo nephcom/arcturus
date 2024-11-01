@@ -1,107 +1,121 @@
-/* General styling */
-body {
-    font-family: "UniFont";
-    src: url("./resources/unifont-16.0.01");
-    background-color: rgb(20, 20, 20);
-    color: white;
-}
+/* WARNING, SHITTY CSS AHEAD!!!!! */
+/* Definitely needs some cleaning. I'm amazing at naming things, after all. */
 
-div.container {
-    width: 38.5rem;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 6.25rem;
-    word-wrap: break-word;
-    white-space: normal;
-    background-color: rgb(36, 36, 36);
-    border-radius: 0.5rem;
-    padding: 0.313rem;
-    position: relative;
-}
-
-h1.section {
-    text-align: left;
-}
-
-hr.solid {
-    color: rgb(88, 83, 83);
-}
-
-div.buttons {
-    overflow-wrap: break-word;
-}
-
-div.buttons a {
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: "Unifont", monospace;
     text-decoration: none;
 }
 
-/* Navigation style */
-nav.nav-items {
-    text-align: right;
-    margin-bottom: 0rem auto;
+body {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 1rem;
+    background-color: rgb(44, 34, 51);
+    color: rgb(255, 255, 255);
 }
 
-/* Font scaling & colors */
-p {
+main {
+    margin: 0.5rem auto;
+    width: 35rem;
+    height: fit-content;
+    color: rgb(255, 255, 255);
+    background-color: #3d3047;
+    border: 0.1rem solid rgb(209, 154, 255);
+    text-align: left;
+    padding: 0.3rem;
+}
+
+div .buttons a {
+    text-decoration: none;
+}
+
+.socials {
+    background-color: #3d3047;
+    border: 0.1rem solid rgb(209, 154, 255);
+    margin: 0.5rem auto;
+    width: fit-content;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    text-align: left;
+    line-height: 0.9rem;
+}
+
+table, td {
+    border-left: 25px solid transparent;
+    margin-left: -2.5rem;
+}
+
+.buttons {
+    background-color: #3d3047;
+    border: 0.1rem solid rgb(209, 154, 255);
+    margin: 0.5rem auto;
+    width: fit-content;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+}
+
+.container {
+    /* all clear */
+    text-align: center;
+}
+
+header p {
+    display: inline-grid;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    color: rgb(255, 255, 255);
+    padding: 0;
+}
+
+header nav {
+    text-align: center;
+    margin: 0.5rem;
     font-size: 1rem;
-    line-height: 1.2rem;
+    color: rgb(192, 103, 255);
+    padding: 0;
 }
 
-h1.nephcom {
-    font-size: 3rem;
-    color: plum;
-    text-align: left;
-    border-bottom: 0.125rem solid rgb(88, 83, 83);
-    width: 15.625rem;
-    margin-top: 0rem;
+#titlelower {
+    font-size: 1.2rem;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    display: inline-grid;
+    width: 35rem;
+    border-bottom: 0.125rem solid rgb(209, 154, 255);
 }
 
-img.logo {
-    width: 5rem;
-    height: 5rem;
+.imgbutton:hover {
+    box-shadow: 0 0rem 1rem 0 rgb(209, 154, 255);;
 }
 
-img.logo:hover {
-    filter: drop-shadow(0 0 0.2rem plum);
+footer {
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
-h1.projects {
-    font-size: 3rem;
-    color: plum;
-    text-align: left;
-    border-bottom: 0.125rem solid rgb(88, 83, 83);
-    width: 15.625rem;
-}
-
-/* Links */
 a:link {
-    color: plum;
-    background-color: transparent;
-    text-decoration: underline;
+    text-decoration: underline dotted;
+    color: rgb(209, 154, 255);
 }
 
 a:hover {
-    color: plum;
     background-color: transparent;
-    text-decoration: underline;
-    text-shadow: 0 0 0.313rem plum;
+    text-shadow: 0 0 0.313rem rgb(209, 154, 255);
 }
 
 a:visited {
-    color: plum;
-    background-color: transparent;
-    text-decoration: underline;
-}
-
-/* Footer */
-.footer {
-    background-color: rgb(20, 20, 20);
-    color: white;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    margin-top: 5.7rem;
-    padding: 0rem;
+    color: rgb(149, 109, 182);;
 }
 
 .social-logo {
@@ -115,18 +129,43 @@ a:visited {
     filter: drop-shadow(0 0 0.2rem #1185fe);
 }
 
-.imgbutton:hover {
-    box-shadow: 0 0rem 1rem 0 plum;
-}
-/* 404 Style */
-div.fourcontainer {
-    text-align: center;
-    font-size: 2.188rem;
+.slgh {
+    margin-bottom: -0.25rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    padding: 0rem;
 }
 
-.small-warning {
-    margin-top: 0rem;
-    font-size: 0.80rem;
-    margin-bottom: -0.70rem;
+.slgh:hover {
+    filter: drop-shadow(0 0 0.2rem #c8d5e2);
+}
+
+.wmi {
+    margin-bottom: -0.25rem;
+    width: 1.25rem;
+    height: 1.25rem;
     padding: 0rem;
+}
+
+.wmi:hover {
+    filter: drop-shadow(0 0 0.2rem plum);
+}
+
+.logo {
+    width: 5rem;
+    height: 5rem;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 0.2rem plum);
+}
+
+.refreshnotice {
+    padding: 0;
+    color: white;
+    margin: 0 auto;
+}
+
+noscript {
+    color: rgb(255, 255, 255);
 }

@@ -1,147 +1,207 @@
-<!DOCTYPE html>
-<!-- 241030 -->
+<!DOCTYPE html> <!--"The Website" 2.0-->
 <html lang="en-US">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, intial-scale=1.0">
         <link rel="stylesheet" href="./stylesheet.css">
-        <link rel="icon" type="image/x-icon" href="./resources/acturusgaylogo.png">
+        <link rel="icon" type="image/x-icon" href="./img/arcturus_logo.png">
         <title>Home - Nephcom</title>
     </head>
-<body>
+<body onload="flavor()"> <!--Not made with mobile devices in mind and never will be. Sowwy not sowwy!-->
+<!-- the evil javascript: -->
+<script src="./scripts/codecorner.js"></script>
+<script data-cat="./img/oneko.gif" src="./scripts/oneko.js"></script>
+<script>
+    function flavor() {
+    var p = document.getElementById('titlelower');
+    
+    const radiant = (max) => {
+        return Math.round(Math.random() * max);
+    }
+
+    const randomElement = (array) => {
+        return array[radiant(array.length - 1)];
+    }
+
+    const wordz = [
+        "...in my home?",
+        "genetically altered spuds!",
+        "zoinks",
+        "acute stress reaction or cocaine abuse?",
+        "who parked their car on my fucking sandwich?",
+        "duck you",
+        "oh corm on",
+        "our endless numbered days",
+        "max?!",
+        "now with an even worse layout!",
+        "comme ci, comme ça",
+        "she was forced to use javascript :(",
+        "murray's 3D maximizer house",
+        "wallet sized wildfire",
+        "we're musical gnomes",
+        "lamb scam",
+        "litre of salad",
+        "swamp donkey",
+        "tasmanian syrup"
+    ];
+
+    let ranWords = document.getElementById('titlelower');
+    ranWords.textContent = randomElement(wordz);
+}
+</script>
     <div class="container">
         <header>
-            <nav class="nav-items">
-                <a href="/">home</a>
-                <a href="./resources/gato.jpg">miaow</a>
-                <a href="https://github.com/nephcom">github</a>
+            <p class="title">Nephcom</p>
+            <p id="titlelower">now with an even worse layout!</p>
+            <nav>
+                <a href="./">home</a>
+                <a href="./img/gato.jpg">cat</a>
+                <a href="https://github.com/nephcom?tab=repositories">projects</a>
+                <a href="./sitemap.html">sitemap</a>
+                <a href="./attributions.html">attributions</a>
                 <a href="mailto:webmaster@arcturus.gay">contact</a>
             </nav>
         </header>
-        <h1 class="nephcom">nephcom</h1>
-        <div class="about">
+        <main>
+            
             <p>
-                Ahoy, my name is Madeleline, though I go by Nephcom online.
-                <br>
-                I enjoy writing useless scripts and wasting hours on the simplest of things.
-                <br>
-                I also spend time writing and occasionally making music with <a href="https://www.beepbox.co">beepbox</a>
-                <br>
-                I don't make a habit of having a large online presence, 
-                <br>
-                so you probably wont see me much of anywhere else.
-                <br>
-                I mostly tinker with Batch Script and am currently creating a "game" with it.
+                Ahoy-hoy! my name is Madeleine. Welcome to me corner of the web. I'm a writer, programmer and, when I feel like it, musician.
+                I don't currently have much going on, though I am working on a small project using Batch Script. You can find more information on my GitHub.
             </p>
+            <p>Also if it wasn't obvious, I'm no HTML/CSS professional. I apologize if you go snooping. :)</p>
+            <p>Also, you should sign my guestbook! it does not exist :(</p>
+            
+        </main>
+        <div class="socials">
+            <table>
+                <tr>
+                    <td>Bluesky</td>
+                    <td>
+                        <a href="https://bsky.app/profile/arcturus.gay">https://bsky.app/profile/arcturus.gay</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Twitter</td>
+                    <td>
+                        <a href="https://www.twitter.com/nephcom">https://www.twitter.com/nephcom</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>YouTube</td>
+                    <td>
+                        <a href="https://www.youtube.com/@nephcom">https://www.youtube.com/@nephcom</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>GitHub</td>
+                    <td>
+                        <a href="https://bsky.app/profile/arcturus.gay">https://bsky.app/profile/arcturus.gay</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Steam</td>
+                    <td>
+                        <a href="https://steamcommunity.com/id/12ozLater/">https://steamcommunity.com/id/12ozLater/</a>
+                    </td>
+                </tr>
+        </table>
         </div>
-        <h1 class="projects">projects</h1>
-        <div class="projects">
-            <a href="https://github.com/nephcom/Windhelm">Windhelm</a>
-        </div>
-        <hr class="solid">
         <div class="buttons">
             <!-- Social links -->
             <a href="https://bsky.app/profile/arcturus.gay">
-                <img class="imgbutton" src="./resources/buttons/bluesky.gif" alt="bluesky">
+                <img class="imgbutton" src="./img/buttons/bluesky.gif" alt="bluesky">
             </a>
             <!-- Cool software -->
             <a href="https://code.visualstudio.com">
-                <img class="imgbutton" src="./resources/buttons/vscbutton.gif" alt="visual studio code">
+                <img class="imgbutton" src="./img/buttons/vscbutton.gif" alt="visual studio code">
             </a>
             <a href="https://www.mozilla.org/en-US/firefox/">
-                <img class="imgbutton" src="./resources/buttons/firefox4.gif" alt="firefox">
+                <img class="imgbutton" src="./img/buttons/firefox4.gif" alt="firefox">
             </a>
             <a href="https://www.thunderbird.net/en-US/">
-                <img class="imgbutton" src="./resources/buttons/thunderbird.gif" alt="thunderbird">
+                <img class="imgbutton" src="./img/buttons/thunderbird.gif" alt="thunderbird">
             </a>
             <a href="https://getpaint.net/">
-                <img class="imgbutton" src="./resources/buttons/paintnet.gif" alt="paintdotnet">
+                <img class="imgbutton" src="./img/buttons/paintnet.gif" alt="paintdotnet">
             </a>
             <a href="https://www.minecraft.net">
-                <img class="imgbutton" src="./resources/buttons/minecraft.gif" alt="minecraft">
+                <img class="imgbutton" src="./img/buttons/minecraft.gif" alt="minecraft">
             </a>
             <br>
             <a href="https://www.7-zip.org/">
-                <img class="imgbutton" src="./resources/buttons/7zip.gif" alt="7zip">
+                <img class="imgbutton" src="./img/buttons/7zip.gif" alt="7zip">
             </a>
             <a href="https://www.videolan.org/vlc/">
-                <img class="imgbutton" src="./resources/buttons/vlc.png" alt="vlc">
+                <img class="imgbutton" src="./img/buttons/vlc.png" alt="vlc">
             </a>
             <a href="https://github.com">
-                <img class="imgbutton" src="./resources/buttons/github.gif" alt="github">
+                <img class="imgbutton" src="./img/buttons/github.gif" alt="github">
             </a>
             <!-- EVIL things -->
             <a href="https://www.web3isgoinggreat.com/">
-                <img class="imgbutton" src="./resources/buttons/nft.gif" alt="NFT? no fucking thanks!">
+                <img class="imgbutton" src="./img/buttons/nft.gif" alt="NFT? no fucking thanks!">
             </a>
             <a href="https://en.wikipedia.org/wiki/PNG">
-                <img class="imgbutton" src="./resources/buttons/nowebp.png" alt="no webp">
+                <img class="imgbutton" src="./img/buttons/nowebp.png" alt="no webp">
             </a>
             <a href="https://en.wikipedia.org/wiki/Criticism_of_Microsoft">
-                <img class="imgbutton" src="./resources/buttons/hatems.gif" alt="i hate microsoft">
+                <img class="imgbutton" src="./img/buttons/hatems.gif" alt="i hate microsoft">
             </a>
             <br>
             <a href="https://en.wikipedia.org/wiki/Privacy_concerns_with_Google">
-                <img class="imgbutton" src="./resources/buttons/fckgoogle.gif" alt="fuck google">
+                <img class="imgbutton" src="./img/buttons/fckgoogle.gif" alt="fuck google">
             </a>
             <a href="https://en.wikipedia.org/wiki/Google_Chrome#Criticism">
-                <img class="imgbutton" src="./resources/buttons/chrome.gif" alt="same shit different asshole">
+                <img class="imgbutton" src="./img/buttons/chrome.gif" alt="same shit different asshole">
             </a>
             <!-- I wasn't able to find many good resources on short notice for this button. Or most of them, honestly. Don't hate me!! :p -->
             <a href="https://www.privacyguides.org/en/">
-                <img class="imgbutton" src="./resources/buttons/google_stand.gif" alt="stand up to google">
+                <img class="imgbutton" src="./img/buttons/google_stand.gif" alt="stand up to google">
             </a>
-            <img class="imgbutton" src="./resources/buttons/anythingbut.gif" alt="anything but chrome">
+            <img class="imgbutton" src="./img/buttons/anythingbut.gif" alt="anything but chrome">
             <a href="https://en.wikipedia.org/wiki/Discord#Criticisms_and_controversies">
-                <img class="imgbutton" src="./resources/buttons/discord-no-way.gif" alt="discord? no way">
+                <img class="imgbutton" src="./img/buttons/discord-no-way.gif" alt="discord? no way">
             </a>
             <!-- Begin the silly button posting -->
-            <img class="imgbutton" src="./resources/buttons/drpepper.gif" alt="powered by dr. pepper">
+            <img class="imgbutton" src="./img/buttons/drpepper.gif" alt="powered by dr. pepper">
             <br>
-            <img class="imgbutton" src="./resources/buttons/got_html.gif" alt="got html?">
-            <img class="imgbutton" src="./resources/buttons/1080p.gif" alt="best with 1080p">
-            <img class="imgbutton" src="./resources/buttons/best_viewed_with_eyes.gif" alt="best viewed with eyes">
-            <img class="imgbutton" src="./resources/buttons/best_viewed_with_monitor.gif" alt="best viewed with a monitor">
+            <img class="imgbutton" src="./img/buttons/got_html.gif" alt="got html?">
+            <img class="imgbutton" src="./img/buttons/1080p.gif" alt="best with 1080p">
+            <img class="imgbutton" src="./img/buttons/best_viewed_with_eyes.gif" alt="best viewed with eyes">
+            <img class="imgbutton" src="./img/buttons/best_viewed_with_monitor.gif" alt="best viewed with a monitor">
             <a href="https://justinjackson.ca/webmaster/">
-            <img class="imgbutton" src="./resources/buttons/fckingwww.gif" alt="fucking webmaster">
+            <img class="imgbutton" src="./img/buttons/fckingwww.gif" alt="fucking webmaster">
             </a>
-            <img class="imgbutton" src="./resources/buttons/htmldream.gif" alt="i dream in html">
+            <img class="imgbutton" src="./img/buttons/htmldream.gif" alt="i dream in html">
             <br>
             <a href="https://www.aclu.org/issues/lgbtq-rights/transgender-rights">
-            <img class="imgbutton" src="./resources/buttons/transnow2.gif" alt="trans rights now!">
+            <img class="imgbutton" src="./img/buttons/transnow2.gif" alt="trans rights now!">
             </a>
-            <img class="imgbutton" src="./resources/buttons/notepad3.gif" alt="notepad now!">
+            <img class="imgbutton" src="./img/buttons/notepad3.gif" alt="notepad now!">
             <a href="https://thesecretwordisnotreal.com/">
-                <img class="imgbutton" src="./resources/buttons/tswinr.gif" alt="the secret word is not real">
+                <img class="imgbutton" src="./img/buttons/tswinr.gif" alt="the secret word is not real">
             </a>
             <a href="https://anonymousplanet.org/">
-            <img class="imgbutton" src="./resources/buttons/internetprivacy.gif" alt="internet privacy now!">
+            <img class="imgbutton" src="./img/buttons/internetprivacy.gif" alt="internet privacy now!">
             </a>
-            <img class="imgbutton" src="./resources/buttons/highereducation.gif" alt="another brilliant mind ruined by higher education">
-            <img class="imgbutton" src="./resources/buttons/aol-sucks.gif" alt="aol sucks, get a real isp">
+            <img class="imgbutton" src="./img/buttons/highereducation.gif" alt="another brilliant mind ruined by higher education">
+            <img class="imgbutton" src="./img/buttons/aol-sucks.gif" alt="aol sucks, get a real isp">
             <br>
-            <img class="imgbutton" src="./resources/buttons/queercoded.gif" alt="you're telling me a queer coded this?">
-            <img class="imgbutton" src="./resources/buttons/debtdeath-css.png" alt="made with cascading style sheet">
-            <img class="imgbutton" src="./resources/buttons/debtdeath-html5.png" alt="HTML5">
-            <img class="imgbutton" src="./resources/buttons/tyg.gif" alt="trans your gender">
-            <img class="imgbutton" src="./resources/buttons/nofuckingthanks.gif" alt="no fucking thanks">
-            <img class="imgbutton" src="./resources/buttons/penis.gif" alt="...penis...">
+            <img class="imgbutton" src="./img/buttons/queercoded.gif" alt="you're telling me a queer coded this?">
+            <img class="imgbutton" src="./img/buttons/debtdeath-css.png" alt="made with cascading style sheet">
+            <img class="imgbutton" src="./img/buttons/debtdeath-html5.png" alt="HTML5">
+            <img class="imgbutton" src="./img/buttons/tyg.gif" alt="trans your gender">
+            <img class="imgbutton" src="./img/buttons/nofuckingthanks.gif" alt="no fucking thanks">
+            <img class="imgbutton" src="./img/buttons/penis.gif" alt="...penis... " title="...penis...">
         </div>
-        <hr class="solid">
-        <p class="small-warning">This site may not display properly on mobile devices.</p>
         <a href="./">
-        <img class="logo" src="./resources/acturusgaylogo.png" alt="site icon">
+            <img class="logo" src="./img/arcturus_logo.png" alt="site icon">
         </a>
+        <p class="refreshnotice">you should <a href="/">refresh</a> the page :3</p>
+        <noscript><p class="ns">guess you can't, actually.</p></noscript>
     </div>
-
-<!-- the evil javascript: -->
-<script src="./resources/scripts/codecorner.js"></script>
-<script data-cat="./resources/oneko.gif" src="./resources/scripts/oneko.js"></script>
-<!-- I tried to add this to another page and it kept expanding a <div> it wasn't inside of :hugging: -->
-<footer>
-    <div class="footer">
-        <p>© 2024 nephcom. <a href="https://bsky.app/profile/arcturus.gay"><img class="social-logo" src="./resources/Bluesky_Logo.svg" alt="bluesky"></a></p>
-    </div>
-</footer>
+    <footer>
+        <p>© 2024 nephcom.</p>
+    </footer>
 </body>
 </html>
